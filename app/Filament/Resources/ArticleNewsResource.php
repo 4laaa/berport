@@ -35,11 +35,11 @@ class ArticleNewsResource extends Resource
                 ->required()
                 ->image(),
 
-                // Forms\Components\Select::make('category_id')
-                // // ->relationship('category', 'name')
-                // ->searchable()
-                // ->preload()
-                // ->required(),
+                Forms\Components\Select::make('category_id')
+                ->relationship('category', 'name')
+                ->searchable()
+                ->preload()
+                ->required(),
 
                 Forms\Components\Select::make('author_id')
                 // ->relationship('author', 'name')
