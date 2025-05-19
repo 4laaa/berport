@@ -13,6 +13,7 @@ Route::get('/author/{author:slug}', [FrontController::class, 'author'])->name('f
 
 Route::get('/search', [FrontController::class, 'search'])->name('front.search');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+    
